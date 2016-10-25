@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ebeeii.camera.MainActivity"
+    android:weightSum="1"
+    android:background="@color/colorBackGroundDown">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:background="@color/colorBackGround">
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="ebeeii"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_weight="0.1"-->
+            <!--android:textColor="@color/colorFont"-->
+            <!--android:background="@color/colorBackGround"/>-->
+        <ImageView
+            android:id="@+id/ebeeii"
+            android:layout_width="75dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="20dp"/>
+        <Button
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/set"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="61dp"
+        android:background="@color/colorBackGround">
+
+        <Button
+            android:id="@+id/link"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/link"
+            android:layout_marginLeft="12dp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:text="  已连接的设备"
+            android:textSize="28px"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/link"
+            android:gravity="center"
+            android:id="@+id/textView"
+            android:layout_weight="0.2"
+            android:textColor="@color/colorFont"
+            android:background="@color/colorBackGround"/>
+        <Button
+            android:id="@+id/linkedDevice"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/arrow" />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/caputre"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="0dp"
+        android:text="拍照"
+        android:background="@drawable/icon_main_"/>
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="50dp"
+        android:text="录像"
+        android:background="@drawable/icon_main_2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <Button
+        android:id="@+id/localAlbum"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="0dp"
+        android:text="本地相册"
+        android:background="@drawable/icon_main_4" />
+
+    <Button
+        android:id="@+id/cameraAlbum"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_below="@id/caputre"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="相机相册"
+        android:background="@drawable/icon_main_3" />
+    </LinearLayout>
+
+</LinearLayout>
